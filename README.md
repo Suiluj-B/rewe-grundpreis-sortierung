@@ -37,6 +37,20 @@ Release versions of Firefox only install add-ons signed by Mozilla. Signing as
 For a new version, raise `version` in `manifest.json` and run `npm run sign` again;
 installing the new `.xpi` updates the add-on and keeps its data.
 
+### Publishing on addons.mozilla.org
+
+Upload **only** the built package, never a zip of the project folder (that would
+include `node_modules/` with the dev tools and fail validation with hundreds of
+messages):
+
+```sh
+npm run build    # -> web-ext-artifacts/rewe_grundpreis-sortierung-<version>.zip
+```
+
+Upload that zip at <https://addons.mozilla.org/developers/addon/submit/>. When asked
+whether source code is needed, answer **No**: nothing is minified or bundled, the
+files in the zip are the source.
+
 ### Development
 
 - `npm run start`: launches a separate Firefox with the add-on loaded (auto-reloads on changes)
