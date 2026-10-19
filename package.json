@@ -1,0 +1,16 @@
+{
+  "name": "rewe-grundpreis-sort",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/",
+    "lint": "web-ext lint",
+    "build": "web-ext build --overwrite-dest",
+    "sign": "web-ext sign --channel=unlisted",
+    "start": "web-ext run --start-url https://www.rewe.de/shop/"
+  },
+  "devDependencies": {
+    "jsdom": "24.1.3",
+    "web-ext": "10.7.0"
+  },
+  "version": "1.2.1"
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <rect width="96" height="96" rx="20" fill="#cc071e"/>
+  <text x="48" y="44" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="30" fill="#fff">€/kg</text>
+  <path d="M30 58h36M36 68h24M42 78h12" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+</svg>
